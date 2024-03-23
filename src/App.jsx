@@ -14,6 +14,7 @@ function App() {
       <Header />
       <MainContent />
       <div>
+        {/* [Visit the deployed site for recipeMama](https://recipe-mama-0252d29f9673.herokuapp.com/) */}
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
