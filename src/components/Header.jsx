@@ -1,7 +1,7 @@
 import portfolioPhoto from '../assets/portfolio-photo.jpg'
 
 function Header() {
-    // return the desired HTML
+    // return the desired HTML for the header
     return (
 // header will be fixed to top of window with position fixed
     <header>
