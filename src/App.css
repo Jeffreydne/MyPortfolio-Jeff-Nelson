@@ -101,6 +101,52 @@ p {
   margin: 20px 30px;
 }
 
+section a {
+  display: flex;
+  justify-content: center;
+}
+a img {
+  width: 80%;
+}
+.nps:hover::before {
+  transition: all 1s ease-in-out;
+} 
+.nps:hover::before {
+  content: "Click anywhere on the national park project to be taken to the actual site." ;
+  display: block;
+  border: 2px solid navy;
+  background-color: navy;
+  color: white;
+  height: 150px;
+  width: 120px; 
+  animation: shiftImg 5s 1 forwards;
+  z-index: 1;
+  } 
+  @keyframes shiftImg {
+    0% {
+      transform: translate(0);  
+      
+    }
+    100% {
+      transform: translate(120px);  
+      ;
+    }
+  }
+  /* card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .small {
+    width: 40%;
+  }
 h2 {
   font-size: 150%; 
 }
@@ -113,7 +159,7 @@ footer {
 }
 
 
-
+/* preexisting CSS below */
 
 .logo {
   height: 6em;
@@ -143,7 +189,7 @@ footer {
   }
 }
 
-.card {
+.viteCard {
   padding: 2em;
 }
 
