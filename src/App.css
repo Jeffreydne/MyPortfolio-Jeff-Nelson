@@ -79,6 +79,27 @@ h1 {
     margin-top: 150px;
     font-size: 250%;
 }
+ /* main-head margin allows h1 and h2 to display beneath the fixed header */
+ #main-head {
+  margin: 30px 0;
+}
+
+/* class card divs allow the card elements (headline, image & description) to align vertically using flexbox.  */
+.card {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px double navy;
+  margin: 10px;
+}
+.card-header, .card-footer {
+  width: 70%;
+  text-align: center;
+}
+p {
+  margin: 20px 30px;
+}
 
 h2 {
   font-size: 150%; 

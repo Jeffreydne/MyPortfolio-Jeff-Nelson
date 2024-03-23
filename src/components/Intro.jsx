@@ -2,8 +2,8 @@ function Intro() {
     return (
         <>
             <div id="main-head">
-                <h1>Hi, I&lsquo;m Jeff Nelson</h1>
-                <h2>Let&lsquo;s talk about what I can do to help you meet your goals!</h2>
+                <h1>Hi, I&apos;m Jeff Nelson</h1>
+                <h2>Let&apos;s talk about what I can do to help you meet your goals!</h2>
             </div>
             <section id="about">
                 <h2 id="projects-scroll">About Me</h2>
