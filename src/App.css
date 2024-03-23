@@ -5,6 +5,73 @@
   text-align: center;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px Helvetica, Verdana, sans-serif;
+  background-color: #ababab;
+  color: navy;
+  max-width: 1400px;
+}
+
+  /* header will be fixed to top of window with position fixed. z-index is 3 to allow for use of z-index in a tooltip in main section.*/
+header {
+  /* font-size: 75%; */
+  background-color: dodgerblue;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  max-width: 1280px;
+}
+
+   /* navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size.*/
+  .navBar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+  /* align-left div is also a flex box allowing header-name div (containing my name & info) to align to the right of the profile photo at all screen sizes  */
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#profile-img {
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+/* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
+#profile-img:hover {
+  transform: translate(300%);
+}
+#header-name {
+  margin-left: 2%;
+}
+
+/* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically.  */
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2%;
+}
+/* a {
+  color: navy;
+} */
+nav a {
+  text-decoration: none;
+}
+
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
