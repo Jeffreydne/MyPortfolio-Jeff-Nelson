@@ -1,4 +1,6 @@
 import NPSwebsite from '../assets/NPSwebsite.png'
+import ProjRecipeMama from './ProjRecipeMama';
+
 function Projects() {
     return (
         <section id="projects">
@@ -12,6 +14,7 @@ function Projects() {
                     <p className="card-footer">This project represents the 1st episode of a weekly blog, featuring a different National Park each week. This 1st week features Yellowstone. It contains a signup & information page, an about the park page, and a page with a timed quiz, about the park, for the user to take.</p>
                 </div>
             </div>
+            <ProjRecipeMama />
         </section>
     )
 }
