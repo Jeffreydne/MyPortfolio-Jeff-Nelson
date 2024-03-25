@@ -27,7 +27,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 3;
-  max-width: 1280px;
+  max-width: 1400px;
 }
 
    /* navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size.*/
@@ -46,6 +46,9 @@ header {
 #profile-img {
   border-radius: 50%;
   transition: all 1s ease-in-out;
+}
+#projects {
+  margin-top: 50px;
 }
 /* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
 #profile-img:hover {
@@ -112,7 +115,7 @@ a img {
   transition: all 1s ease-in-out;
 } 
 .nps:hover::before {
-  content: "Click anywhere on any of the projects to be taken to the actual site." ;
+  content: "Click anywhere on any of the projects to be taken to the deployed site of that project." ;
   display: block;
   border: 2px solid navy;
   background-color: navy;

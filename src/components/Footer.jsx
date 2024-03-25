@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm";
 
 function Footer() {
     // return the desired HTML for the footer
@@ -9,6 +10,7 @@ function Footer() {
                     <p>Jeff Nelson</p>
                     <p>email: jeffreydne@gmail.com</p>
                 </div>
+                <ContactForm />
                 <div>
                     <h2>Links to me</h2>
                     <a href="https://github.com/Jeffreydne"><p>Github</p></a>
