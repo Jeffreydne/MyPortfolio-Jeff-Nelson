@@ -1,5 +1,6 @@
 import NPSwebsite from '../assets/NPSwebsite.png'
 import ProjRecipeMama from './ProjRecipeMama';
+import ProjMovieMachine from './ProjMovieMachine';
 
 function Projects() {
     return (
@@ -15,6 +16,7 @@ function Projects() {
                 </div>
             </div>
             <ProjRecipeMama />
+            <ProjMovieMachine />
         </section>
     )
 }
