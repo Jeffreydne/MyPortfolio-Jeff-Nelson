@@ -173,6 +173,11 @@ form, input, textarea, #btn {
 }
 #btn {
   background-color: dodgerblue;
+  margin: 20px;
+}
+#formBottom {
+  display: flex;
+  justify-content: space-around;
 }
 
 
