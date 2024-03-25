@@ -22,7 +22,7 @@ body {
 header {
   /* font-size: 75%; */
   background-color: dodgerblue;
-  padding: 10px;
+  padding: 10px 40px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -94,6 +94,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border: 2px double navy;
+  border-radius: 10px;
   margin: 10px;
 }
 .card-header, .card-footer {
@@ -118,6 +119,7 @@ a img {
   content: "Click anywhere on any of the projects to be taken to the deployed site of that project." ;
   display: block;
   border: 2px solid navy;
+  border-radius: 10px;
   background-color: navy;
   color: white;
   height: 150px;
@@ -160,6 +162,20 @@ footer {
   text-align: center;
   /* min-width: 1280px; */
 }
+
+form, input, textarea, #btn {
+  background-color: #ababab;
+  border: 2px solid navy;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4px;
+  color: navy;
+}
+#btn {
+  background-color: dodgerblue;
+}
+
+
 
 /* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes */
 @media screen and (max-width: 600px) {
