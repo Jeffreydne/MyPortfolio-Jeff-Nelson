@@ -112,7 +112,7 @@ a img {
   transition: all 1s ease-in-out;
 } 
 .nps:hover::before {
-  content: "Click anywhere on the national park project to be taken to the actual site." ;
+  content: "Click anywhere on any of the projects to be taken to the actual site." ;
   display: block;
   border: 2px solid navy;
   background-color: navy;
@@ -158,18 +158,49 @@ footer {
   /* min-width: 1280px; */
 }
 
+/* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes */
+@media screen and (max-width: 600px) {
+  .small-card-container {
+      flex-direction: column;
+    }
+    .navBar-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* at smaller screen sizes there needs to be additional text added to make clear which text elements are nav links (in header) */
+    .align-left {
+      margin-bottom: 20px;
+    }
+    nav {
+      position: relative;
+    }
+    nav::before {
+      position: absolute;
+      top: -40px;
+      margin-top: 20px;
+      content: "Nav links:";
+      text-decoration: underline;
+    }
+    /* at smaller screen widths additional top margin is needed to keep main element visible below the fixed header */
+    h1 {
+      margin-top: 220px;
+    }
+}
+
+
 
 /* preexisting CSS below */
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
+  filter: drop-shadow(0 0 2em #646cffaa); */
+/* }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -181,18 +212,18 @@ footer {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
+} */
+/* 
 .viteCard {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
-}
+} */
