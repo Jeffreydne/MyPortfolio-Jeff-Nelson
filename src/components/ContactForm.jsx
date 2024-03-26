@@ -17,7 +17,7 @@ function ContactForm() {
 
                         </input>
                         <div id="formBottom">
-                            <textarea name="comments" cols="40" rows="2" placeholder="enter a comment"></textarea>
+                            <textarea name="comments" cols="80" rows="2" placeholder="enter a comment"></textarea>
                             <button id="btn" type="submit">Submit</button>
                         </div>
                     </fieldset>

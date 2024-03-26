@@ -81,6 +81,11 @@ a {
 nav a {
   text-decoration: none;
 }
+.active {
+  background-color: royalblue !important;
+  border-radius: 5px;
+  padding: 3px;
+}
 
 /* h1 & h2 for the page will be aligned center as block level elements inside the main-head div*/
 h1, h2 {
@@ -95,6 +100,7 @@ h1 {
 main {
   width: 100%;
   margin: 0 auto;
+  /* max-width: 1400px; */
 }
  /* main-head margin allows h1 and h2 to display beneath the fixed header */
  /* #main-head {
@@ -194,11 +200,12 @@ form, input, textarea, #btn {
 #btn {
   background-color: dodgerblue;
   margin: 20px;
+  width: 30%
 }
-#formBottom {
+/* #formBottom {
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-between;
+} */
 
 
 
