@@ -1,7 +1,12 @@
 function ContactForm() {
     return (
-        <>
+        // <>
             <div id="contactFormDiv">
+                <div>
+                    <h2>Contact Me</h2>
+                    <p>Jeff Nelson</p>
+                    <p>email: jeffreydne@gmail.com</p>
+                </div>
                 <form>
                     <fieldset>
                         <legend>Send your contact info and a comment to me</legend>
@@ -18,7 +23,7 @@ function ContactForm() {
                     </fieldset>
                 </form>
             </div>
-        </>
+
     )
 }
 

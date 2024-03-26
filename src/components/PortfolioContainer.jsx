@@ -3,7 +3,9 @@ import { useState } from "react";
 import Header from './Header';
 import Intro from './Intro';
 import Projects from './Projects';
+import ContactForm from './ContactForm';
 import Footer from './Footer';
+// import Footer from './Footer';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Intro');
@@ -15,8 +17,13 @@ export default function PortfolioContainer() {
         if (currentPage === 'Projects') {
             return <Projects />
         }
+        if (currentPage === 'ContactForm') {
+            return <ContactForm />
+        }
+
     };
 
+    const handlePageChange = (page) => setCurrentPage(page);
     return (
         <>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />

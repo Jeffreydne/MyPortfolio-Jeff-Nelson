@@ -32,7 +32,10 @@ function Header({ currentPage, handlePageChange}) {
                 >
                     My Projects
                 </a>
-                <a href="#contact">Contact Me</a>
+                <a href="#contact"
+                onClick={() => handlePageChange('ContactForm')}
+                className={currentPage === 'ContactForm' ? 'active' : 'notActive'}
+                >Contact Me</a>
             </nav>
         </div>
     </header>

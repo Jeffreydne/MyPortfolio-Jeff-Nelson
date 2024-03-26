@@ -1,9 +1,10 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+import PortfolioContainer from "./components/PortfolioContainer";
+// import MainContent from "./components/MainContent";
+// import Footer from "./components/Footer";
 import './App.css'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <PortfolioContainer />
       {/* <div> */}
         {/* [Visit the deployed site for recipeMama](https://recipe-mama-0252d29f9673.herokuapp.com/),    [Visit the deployed site for MovieMachine](https://gjudilla.github.io/movie-machine/),    [Visit the deployed site for WeatherDashboard](https://jeffreydne.github.io/weather-dashboard/) */}
@@ -35,7 +36,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

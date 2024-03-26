@@ -48,7 +48,17 @@ header {
   transition: all 1s ease-in-out;
 }
 #projects {
-  margin-top: 50px;
+  padding-top: 150px;
+}
+
+#contactFormDiv {
+  padding: 150px 0px;
+  width: 100%;
+  /* margin: auto; */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 /* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
 #profile-img:hover {
@@ -79,13 +89,17 @@ h1, h2 {
 }
 /* margin top needed to keep entire header visible below the fixed header */
 h1 {
-    margin-top: 150px;
+    padding-top: 150px;
     font-size: 250%;
 }
- /* main-head margin allows h1 and h2 to display beneath the fixed header */
- #main-head {
-  margin: 30px 0;
+main {
+  width: 100%;
+  margin: 0 auto;
 }
+ /* main-head margin allows h1 and h2 to display beneath the fixed header */
+ /* #main-head {
+  margin: 20px 0 0 0;
+} */
 
 /* class card divs allow the card elements (headline, image & description) to align vertically using flexbox.  */
 .card {
@@ -155,13 +169,19 @@ a img {
 h2 {
   font-size: 150%; 
 }
-footer {
+#links {
   background-color: dodgerblue;
   padding: 10px;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   /* min-width: 1280px; */
 }
+/* footer a {
+  width: 100%;
+} */
 
 form, input, textarea, #btn {
   background-color: #ababab;
