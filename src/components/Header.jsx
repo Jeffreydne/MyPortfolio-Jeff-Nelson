@@ -1,6 +1,6 @@
 import portfolioPhoto from '../assets/portfolio-photo.jpg'
 
-function Header() {
+function Header({ currentPage, handlePageChange}) {
     // return the desired HTML for the header
     return (
 // header will be fixed to top of window with position fixed
@@ -18,8 +18,20 @@ function Header() {
             {/* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically. */}
             <nav>
                 {/* This can be fixed later with javascript. For now, scroll to main-head, projects-scroll and contact ids allows the entire about, projects, and contacts to appear when applicable navLink is clicked */}
-                <a href="#main-head">About Me</a>
-                <a href="#projects-scroll">My Projects</a>
+                <a 
+                href="#main-head"
+                onClick={() => handlePageChange('Intro')}
+                className={currentPage === 'Intro' ? 'active' : 'notActive'}
+                >
+                    About Me
+                </a>
+                <a 
+                href="#projects-scroll"
+                onClick={() => handlePageChange('Projects')}
+                className={currentPage === 'Projects' ? 'active' : 'notActive'}
+                >
+                    My Projects
+                </a>
                 <a href="#contact">Contact Me</a>
             </nav>
         </div>

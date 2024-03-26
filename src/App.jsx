@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <MainContent />
+      <PortfolioContainer />
       {/* <div> */}
         {/* [Visit the deployed site for recipeMama](https://recipe-mama-0252d29f9673.herokuapp.com/),    [Visit the deployed site for MovieMachine](https://gjudilla.github.io/movie-machine/),    [Visit the deployed site for WeatherDashboard](https://jeffreydne.github.io/weather-dashboard/) */}
 
@@ -40,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
