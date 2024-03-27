@@ -1,10 +1,3 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -16,12 +9,10 @@ body {
   background-color: #ababab;
   color: navy;
   max-width: 1400px;
-  /* display:block !important; */
 }
 
   /* header will be fixed to top of window with position fixed. z-index is 3 to allow for use of z-index in a tooltip in main section.*/
 header {
-  /* font-size: 75%; */
   background-color: dodgerblue;
   padding: 10px 40px;
   width: 100%;
@@ -43,11 +34,16 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
-
+/* profile pic is a circle & use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
 #profile-img {
   border-radius: 50%;
   transition: all 1s ease-in-out;
 }
+#profile-img:hover {
+  transform: translate(300%);
+}
+
+/* sets the project page content below the header */
 #projects {
   padding-top: 150px;
 }
@@ -55,16 +51,12 @@ header {
 #contactFormDiv {
   padding: 150px 0px;
   width: 100%;
-  /* margin: auto; */
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
-#profile-img:hover {
-  transform: translate(300%);
-}
+
 #header-name {
   margin-left: 2%;
 }
@@ -93,15 +85,15 @@ h1, h2 {
   font-family: Georgia, serif;
   text-align: center;
 }
-/* margin top needed to keep entire header visible below the fixed header */
+/* h1 is only used on about page and the padding-top is needed to keep entire header visible below the fixed header */
 h1 {
     padding-top: 150px;
     font-size: 250%;
 }
+/* main holds the contents of the 3 pages, About Me, My Projects, and Contact Me, depening on which is active. Header and footer are displayed in all cases */
 main {
   width: 100%;
   margin: 0 auto;
-  /* max-width: 1400px; */
 }
  /* main-head margin allows h1 and h2 to display beneath the fixed header */
  #main-head {
@@ -133,6 +125,8 @@ section a {
 a img {
   width: 80%;
 }
+
+/* When the lead project (NPS) is hovered over, a blue box appears, and slowly woves to its final position, to let the user know they can click on any project to go to the deployed site */
 .nps:hover::before {
   transition: all 1s ease-in-out;
 } 
@@ -158,7 +152,7 @@ a img {
       ;
     }
   }
-  /* card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
+  /* card-container div holds all 5 projects. The small-car-containers below will hold 2 non-featured projects each & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
   .card-container {
     display: flex;
     flex-direction: column;
@@ -176,20 +170,17 @@ a img {
 h2 {
   font-size: 150%; 
 }
-#links {
+
+footer {
   background-color: dodgerblue;
   padding: 10px;
   width: 100%;
-  /* text-align: center; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* min-width: 1280px; */
 }
-/* footer a {
-  width: 100%;
-} */
 
+/* css for form elements */
 form, input, textarea, #btn {
   background-color: #ababab;
   border: 2px solid navy;
@@ -203,12 +194,6 @@ form, input, textarea, #btn {
   margin: 20px;
   width: 30%
 }
-/* #formBottom {
-  display: flex;
-  justify-content: space-between;
-} */
-
-
 
 /* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes */
 @media screen and (max-width: 600px) {
@@ -240,42 +225,3 @@ form, input, textarea, #btn {
     }
 }
 
-
-
-/* preexisting CSS below */
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa); */
-/* }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-} */
-/* 
-.viteCard {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */

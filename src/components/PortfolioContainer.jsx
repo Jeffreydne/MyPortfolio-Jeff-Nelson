@@ -5,11 +5,10 @@ import Intro from './Intro';
 import Projects from './Projects';
 import ContactForm from './ContactForm';
 import Footer from './Footer';
-// import Footer from './Footer';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Intro');
-    // use renderPage method to determine the state of currentPage and return the appropriate .jsx file to render based on the state
+    // renderPage method to determines the state of currentPage based on which "page" is active, determine by what is clicked on in the nav bar, "About Me" is default.
     const renderPage = () => {
         if (currentPage === 'Intro') {
             return <Intro />
@@ -20,9 +19,8 @@ export default function PortfolioContainer() {
         if (currentPage === 'ContactForm') {
             return <ContactForm />
         }
-
     };
-
+    // The currentPage state property and the handlePageChange method are both passed as props to <Header />. When a page is clicked on in the header, handlePageChange is called which will reset the state to the clicked on page and then use the renderPage method to return the appropriate .jsx file to render based on the state
     const handlePageChange = (page) => setCurrentPage(page);
     return (
         <>

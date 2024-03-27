@@ -15,9 +15,8 @@ function Header({ currentPage, handlePageChange}) {
                     <p>Full Stack Software Developer</p>
                 </div>
             </div> 
-            {/* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically. */}
+            {/* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically. WHen clicking on a nav link the onclick function uses the handlePageChange method (defined in portfolioContainer.jsx) to set the current state to reflect that choice, which will rerender the HTML so the clicked on page will render in <main> element and setting the class for that navlink to active, causing it to highlight */}
             <nav>
-                {/* This can be fixed later with javascript. For now, scroll to main-head, projects-scroll and contact ids allows the entire about, projects, and contacts to appear when applicable navLink is clicked */}
                 <a 
                 href="#main-head"
                 onClick={() => handlePageChange('Intro')}
