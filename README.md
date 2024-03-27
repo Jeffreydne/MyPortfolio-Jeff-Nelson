@@ -31,7 +31,7 @@ My portfolio - written with React
 
 [Visit the deployed site](https://jeff-nelson-portfolio.netlify.app/)
 
-This portfolio allows a user to see my skills and accomplishments inthe field of software development. 
+This portfolio allows a user to see my skills and accomplishments in the field of software development. 
 
 ---
 
@@ -74,7 +74,7 @@ The following line shows how the currentPage state property and the handlePageCh
 }
 
 ```
-The following code is from the Header.jsx component. It shows how the handlePageChange method is called when the About Me nav link is clicked on. This method sends 'intro' as an argument when calling the function in the code above, thereby changing the state to "intro', and it also sets the class to active which highlights the nav link element in the header so the highlighted link corresponds to the page being displayed. The same code concept is used for the other 2 links as well. 
+The following code is from the Header.jsx component. It shows how the handlePageChange method is called when the About Me nav link is clicked on. This method sends 'intro' as an argument when calling the function in the code above, thereby changing the state to "intro', and it also sets the class to active which highlights the "About Me" nav link element in the header so the highlighted link corresponds to the About Me page being displayed, through the Intro component. The same code concept is used for the other 2 nav links as well. 
 
 ```JS
   <nav>
@@ -93,7 +93,7 @@ The following code is from the Header.jsx component. It shows how the handlePage
 
 ## Usage
 
-This website is designed to allow a user see my portfolio so they can learn about my skills and accomplishments in the world of software development. A user can see various projects I have done individually, and others I have colaborated on. My contact information is also available.
+This website is designed to allow a user to see my portfolio so they can learn about my skills and accomplishments in the world of software development. A user can see various projects I have done individually, and others I have collaborated on. My contact information is also available.
 
 ---
 
