@@ -14,7 +14,7 @@ function Header({ currentPage, handlePageChange}) {
                     <p>Jeff Nelson</p>
                     <p>Full Stack Software Developer</p>
                 </div>
-            </div>
+            </div> 
             {/* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically. */}
             <nav>
                 {/* This can be fixed later with javascript. For now, scroll to main-head, projects-scroll and contact ids allows the entire about, projects, and contacts to appear when applicable navLink is clicked */}

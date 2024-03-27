@@ -16,6 +16,7 @@ body {
   background-color: #ababab;
   color: navy;
   max-width: 1400px;
+  display:block !important;
 }
 
   /* header will be fixed to top of window with position fixed. z-index is 3 to allow for use of z-index in a tooltip in main section.*/
@@ -103,9 +104,9 @@ main {
   /* max-width: 1400px; */
 }
  /* main-head margin allows h1 and h2 to display beneath the fixed header */
- /* #main-head {
-  margin: 20px 0 0 0;
-} */
+ #main-head {
+  padding-bottom: 70px;
+}
 
 /* class card divs allow the card elements (headline, image & description) to align vertically using flexbox.  */
 .card {
