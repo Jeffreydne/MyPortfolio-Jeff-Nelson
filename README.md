@@ -29,7 +29,7 @@ My portfolio - written with React
 
 [Visit the Github repository](https://github.com/Jeffreydne/MyPortfolio-Jeff-Nelson)
 
-[Visit the deployed site](XXXXXXXXXXXXXXXXXX)
+[Visit the deployed site](https://jeff-nelson-portfolio.netlify.app/)
 
 This portfolio allows a user to see my skills and accomplishments inthe field of software development. 
 
