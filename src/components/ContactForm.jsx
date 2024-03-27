@@ -1,10 +1,9 @@
 function ContactForm() {
     return (
         <div id="contactFormDiv">
-            <div>
+            <div id="contactMe">
                 <h2>Contact Me</h2>
-                <p>Jeff Nelson</p>
-                <p>email: jeffreydne@gmail.com</p>
+                <p>Jeff Nelson email: jeffreydne@gmail.com</p>
             </div>
             <form>
                 <fieldset>

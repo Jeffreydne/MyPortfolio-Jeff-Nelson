@@ -49,7 +49,7 @@ header {
 }
 
 #contactFormDiv {
-  padding: 150px 0px;
+  padding: 200px 0px 180px 0px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -57,6 +57,13 @@ header {
   align-items: center;
 }
 
+#contactMe {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin: 0px;
+  padding: 0px;
+}
 #header-name {
   margin-left: 2%;
 }
@@ -85,18 +92,19 @@ h1, h2 {
   font-family: Georgia, serif;
   text-align: center;
 }
-/* h1 is only used on about page and the padding-top is needed to keep entire header visible below the fixed header */
+
 h1 {
-    padding-top: 150px;
     font-size: 250%;
 }
 /* main holds the contents of the 3 pages, About Me, My Projects, and Contact Me, depening on which is active. Header and footer are displayed in all cases */
 main {
   width: 100%;
   margin: 0 auto;
+  /* padding-bottom: 80px; */
 }
- /* main-head margin allows h1 and h2 to display beneath the fixed header */
+ /* main-head margin pushes the footer lower when on the About Me page, and the padding-top is needed to keep entire header visible below the fixed header */
  #main-head {
+  padding-top: 150px;
   padding-bottom: 70px;
 }
 
@@ -188,15 +196,46 @@ form, input, textarea, #btn {
   margin: 5px;
   padding: 4px;
   color: navy;
+  width: 70%
 }
+
 #btn {
   background-color: dodgerblue;
   margin: 20px;
   width: 30%
 }
-
-/* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes */
+/*  At screen width 900px: changes made to contact form for better display */
+@media screen and (max-width: 900px) {
+  #contactFormDiv {
+    padding: 200px 0px 135px 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #contactMe {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+/* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes and changes made to contactPage, Info & Projects for better display */
 @media screen and (max-width: 600px) {
+  #main-head {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  #projects {
+    padding-top: 250px;
+  }
+  #contactFormDiv {
+    padding: 250px 0px 250px 0px;
+  }
   .small-card-container {
       flex-direction: column;
     }
@@ -223,5 +262,21 @@ form, input, textarea, #btn {
     h1 {
       margin-top: 220px;
     }
+}
+
+/* for smallest screen sizes padding adjusted to raise footer */
+@media screen and (max-width: 420px) {
+  #contactFormDiv {
+    padding: 250px 0px 200px 0px;
+  }
+  #contactMe {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #contactFormDiv {
+    padding: 250px 0px 20px 0px;
+  }
 }
 
