@@ -16,7 +16,7 @@ body {
   background-color: #ababab;
   color: navy;
   max-width: 1400px;
-  display:block !important;
+  /* display:block !important; */
 }
 
   /* header will be fixed to top of window with position fixed. z-index is 3 to allow for use of z-index in a tooltip in main section.*/
