@@ -110,3 +110,9 @@ This website is designed to allow a user to see my portfolio so they can learn a
 ## Credits
 
   This application was built from scratch. I have used many of the strategies taught by the excellent instructors at the UC Berkeley Extension Full Stack coding bootcamp. In this case I used variations of methods taught in unit 20, which deals with React and Vite npm.  Finally, I copied open source badges from Vedant Chainani at the website https://dev.to/envoy_/150-badges-for-github-pnk#contents 
+
+
+NOTE WHEN A RESUME IS TO BE ADDED:
+Display PDFs in your React app as easily as if they were images. Latest version as of March 2024: 7.7.1,  Start using react-pdf in your project by running npm i react-pdf
+read more at
+  https://www.npmjs.com/package/react-pdf
